@@ -1,4 +1,4 @@
-# Laravel 11 應用程式的即時日誌監測和錯誤偵測
+# Laravel 12 應用程式的即時日誌監測和錯誤偵測
 
 引入 saasscaleup 的 laravel-log-alarm 套件來擴增應用程式的即時日誌監測和錯誤偵測，可以透過電子郵件和 Slack 提供即時監測、錯誤偵測和即時通知，幫助您掌握日誌。
 
@@ -16,11 +16,15 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/log-monitoring` 來進行日誌監測。
 
 ----
 
 ## 畫面截圖
-![](https://imgur.com/2jtdD7h.png)
+![](https://imgur.com/R2oAjfg.png)
 > 第 5 次錯誤日誌訊息後，將發送電子郵件通知
